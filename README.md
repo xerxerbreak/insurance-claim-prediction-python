@@ -5,7 +5,7 @@
 An insurer that can estimate claim amounts can price premiums by risk, identify high-cost individuals, and flag unusually high predicted claims for review. This project compares eight regression models on 1,332 people and finds that tree-based models, gradient boosting in particular, fit this data best.
 
 **Tools:** Python · pandas · NumPy · matplotlib · scikit-learn (Google Colab)  
-**Data:** [Insurance Claim Analysis: Demographic and Health](https://www.kaggle.com/datasets/thedevastator/insurance-claim-analysis-demographic-and-health) (Kaggle)  
+**Data:** [Insurance Claim Analysis: Demographic and Health](https://www.kaggle.com/datasets/thedevastator/insurance-claim-analysis-demographic-and-health) (Kaggle), originally by Sumit Kumar Shukla ([data.world/sumitrock](https://data.world/sumitrock))  
 **Team:** Jimmy Tran and Steven Ho — CIS 4920 group project, Georgia State University
 
 ---
@@ -79,20 +79,21 @@ An insurer that can estimate claim amounts can price premiums by risk, identify 
 
 ## Run it
 
+The dataset isn't included in this repo. Download `insurance_data.csv` from the [Kaggle page](https://www.kaggle.com/datasets/thedevastator/insurance-claim-analysis-demographic-and-health) and save it as `data/insurance_data.csv`.
+
 ```bash
 pip install -r requirements.txt
 jupyter notebook notebooks/insurance_claim_prediction.ipynb
 ```
 
-Or open the notebook in Google Colab and upload `data/insurance_data.csv`.
+Or open the notebook in Google Colab, upload the downloaded CSV, and change the `read_csv` path to `'insurance_data.csv'`.
 
 ## Repository structure
 
 ```
 ├── README.md
 ├── requirements.txt
-├── data/
-│   └── insurance_data.csv
+├── data/                  # add insurance_data.csv here (not tracked)
 └── notebooks/
     └── insurance_claim_prediction.ipynb
 ```
